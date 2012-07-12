@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>APJP</title>
+	</head>
+	<body style="background-color:#EEEEEE">
+		<div id="contianer">
+			<div style="text-align: center;">
+				APJP_KEY = 
+				<script type="text/javascript">
+					var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+					var buffer = '';
+					for (var i = 0; i < 16; i++)
+					{
+						buffer += a.substr(Math.floor(Math.random() * a.length), 1);
+					}
+					document.write('<input type="text" value="' + buffer + '" />');
+				</script>
+				<input type="button" onClick=history.go(0) value="Refresh" />
+			</div>
+		</div>
+	</body>
+</html>
