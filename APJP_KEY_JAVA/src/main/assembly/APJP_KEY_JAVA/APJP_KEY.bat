@@ -5,8 +5,8 @@ set count=0
 :: The default length of APJP_KEY is 16
 set salt=0
 :number
-set /p salt=Enter a salt value(Integer ^<=10): 
-if !salt! gtr 10 goto number
+set /p salt=Enter a salt value(Integer ^<=16): 
+if !salt! gtr 16 goto number
 set /a length=15 + !salt!
 :loop
 set /a count+=1

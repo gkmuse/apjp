@@ -8,8 +8,8 @@ buffer = ''
 
 while True:
     try:
-        salt = input("Input a salt value(Integer <= 10): ")
-        if int(salt) <= 10:
+        salt = input("Input a salt value(Integer <= 16): ")
+        if int(salt) <= 16:
             length = 16 + int(salt)
             break
     except NameError:
